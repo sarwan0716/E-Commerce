@@ -13,6 +13,13 @@ public class Category {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	private String categoryname;
+	private String categorydesc;
+	public String getCategorydesc() {
+		return categorydesc;
+	}
+	public void setCategorydesc(String categorydesc) {
+		this.categorydesc = categorydesc;
+	}
 	@OneToMany(mappedBy="category")
 	private List<Product> products;
 	public int getId() {
