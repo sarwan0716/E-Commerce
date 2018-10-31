@@ -5,9 +5,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="<c:url value='/resources/css/registration.css'></c:url>" rel="stylesheet">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="background-color:#009933">
 <div class="container">
 <c:if test="${ !empty(cartItems) }">
 <a href="<c:url value='/cart/clearcart'></c:url>" class="btn btn-danger" pull-left  >

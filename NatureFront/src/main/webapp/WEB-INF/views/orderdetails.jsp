@@ -1,5 +1,3 @@
-
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
@@ -10,6 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="<c:url value='/resources/css/registration.css'></c:url>" rel="stylesheet">
 <title>Insert title here</title>
 </head>
 <body>
@@ -111,6 +110,6 @@
         </div>
         </div>
         </div>
-
+<h3 align="center"><a href="<c:url value='/welcome'></c:url>">Thanks for Visiting</a></h3>
 </body>
 </html>

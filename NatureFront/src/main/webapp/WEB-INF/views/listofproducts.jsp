@@ -6,6 +6,7 @@
 <head>
    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="<c:url value='/resources/css/registration.css'></c:url>" rel="stylesheet">
 <title>Insert title here</title>
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -25,7 +26,9 @@
 	<div class="container">
 	<b>List of Products</b>
 		<table class="table table-striped" border="1">
-			<thead>
+		<colgroup>
+        <col style="background: #D0E0D2;" span="5" />
+    			<thead>
 				<tr>
 					<th>Id</th>
 					<th>Product Name</th>
@@ -55,6 +58,7 @@
 				</tr>
 			</c:forEach>
 			</tbody>
+			</colgroup>
 		</table>
 
 	</div>

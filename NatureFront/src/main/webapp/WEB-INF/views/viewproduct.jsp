@@ -7,14 +7,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<%-- <link href="<c:url value='/resources/css/registration.css'></c:url>" rel="stylesheet"> --%>
 <title>Insert title here</title>
 </head>
 <body>
 	<div class="container">
-		ProductDetails<br>
-		<div class="page-info">
-			<div class="panel panel-warning">ProductDetails</div>
-			<div class="panel panel-body">
+					<div class="panel panel-body">
 				<c:url value="/cart/addtocart/${productObj.id}" var="url"></c:url>
 				<form action="${url }">
 					<img

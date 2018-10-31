@@ -32,15 +32,16 @@
 <link rel="stylesheet"
 	href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
 
-
 </head>
 <body>
-
+<br>
+<h5 align="center"><marquee>FLAT 20% OFF ON SUPER SAVERS. USE SPECIAL COUPON CODE: FLAT20 * FREE SHIPPING ON PURCHASE OF RS.650 AND ABOVE * FREE SHIPPING ON AROMA OILS</marquee></h5> 
+<br>
 	<div class="container">
 		<nav class="navbar navbar-inverse">
 		<div class="navabar-header">
 			<a href="" class="navbar-brand"><img
-				src="resources/images/dragon.jpg" alt="NIIT" height="100%"
+				src="E:\E-Commerce\NatureFront\src\main\webapp\WEB-INF\images\logo123.jpg" alt="NIIT" height="100%"
 				width="100%"></a>
 			<button type="button" class="navbar-toggle collapsed"
 				data-toggle="collapse" data-target="#navbardemo"
@@ -74,8 +75,9 @@
 					<li><a href="<c:url value='/admin/getproductform'></c:url>">Add
 							Product</a></li>
 					<li><a
-						href="<c:url value='/admin/getupdateform/{id}'></c:url>">Edit
+						href="<c:url value='/all/getallproducts'></c:url>">Edit
 							Product</a></li>
+								<li><a href="<c:url value='/category'></c:url>">Add & Edit Category</a></li>
 				</security:authorize>
 
 				<security:authorize access="hasRole('ROLE_USER')">

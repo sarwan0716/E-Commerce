@@ -4,10 +4,14 @@
   margin: 0;
   padding: 0;
 }
-body {
+ body {
   font-family: "Open Sans";
   font-size: 14px;
-}
+} 
+/* body
+{
+	background-color:#408080;
+} */
 
 form {
   padding: 20px;

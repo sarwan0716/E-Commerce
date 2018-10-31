@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<%-- <link href="<c:url value='/resources/css/registration.css'></c:url>" rel="stylesheet"> --%>
 <title>Insert title here</title>
 </head>
 <body>
@@ -17,13 +18,10 @@
 			enctype="multipart/form-data">
 			<table>
 				<tr>
-					<td></td>
 					<!-- user need not give value for id, auto generation -->
 					<td><form:hidden path="id"></form:hidden></td>
 				</tr>
-
-				<tr>
-
+		<tr>
 					<td>Enter product Name</td>
 					<td><form:input path="productname"></form:input> <form:errors
 							path="productname" cssStyle="color:red"></form:errors></td>

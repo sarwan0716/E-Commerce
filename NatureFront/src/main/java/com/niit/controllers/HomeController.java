@@ -49,7 +49,10 @@ List<CartItem> cartItems=cartItemDao.getCart(email);
 session.setAttribute("cartSize",cartItems.size());
 	return "homepage";   //logical view name
 }
-	
+@RequestMapping(value="/")
+public String index(){
+	return "index";
+}
 
 @RequestMapping(value="/aboutus")
 public String aboutUs(){
@@ -74,6 +77,9 @@ public String logout(Model model){
 	
 	return "login";
 }
-
+@RequestMapping(value="/welcome")
+public String welcome(){
+	return "thankyou";
+}
 
 }

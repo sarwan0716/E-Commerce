@@ -47,7 +47,7 @@ public class ProductController {
 	@RequestMapping(value="/admin/deleteproduct/{id}")
 	public String deleteProduct(@PathVariable int id,Model model,HttpServletRequest request){
 		productDao.deleteProduct(id);
-		Path path=Paths.get(request.getServletContext().getRealPath("/")+"WEB-INF/classes/images/"+id+".png");
+		Path path=Paths.get(request.getServletContext().getRealPath("/")+"WEB-INF/classes/images/"+id+".jpg");
 		if(Files.exists(path)){
 			try {
 				Files.delete(path);
@@ -82,7 +82,7 @@ public class ProductController {
 		MultipartFile img=product.getImage();
 		System.out.println(request.getServletContext().getRealPath("/"));
 		//Defining a path
-		Path path=Paths.get(request.getServletContext().getRealPath("/")+"WEB-INF/resources/images/"+product.getId()+".png");
+		Path path=Paths.get(request.getServletContext().getRealPath("/")+"WEB-INF/resources/images/"+product.getId()+".jpg");
 		//transfer the image content into another file
 		if(!img.isEmpty()&&img!=null)
 		{
@@ -119,7 +119,7 @@ public class ProductController {
 		MultipartFile img=product.getImage();
 		System.out.println(request.getServletContext().getRealPath("/"));
 		//Defining a path
-		Path path=Paths.get(request.getServletContext().getRealPath("/")+"WEB-INF/resources/images/"+product.getId()+".png");
+		Path path=Paths.get(request.getServletContext().getRealPath("/")+"WEB-INF/resources/images/"+product.getId()+".jpg");
 		//transfer the image content into another file
 		if(!img.isEmpty()&&img!=null)
 		{
